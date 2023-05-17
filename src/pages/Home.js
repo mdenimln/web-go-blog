@@ -1,5 +1,11 @@
+
+import { useState } from 'react';
 import './Home.css';
 export default function Home() {
+    const [selengkapnya, setSelengkapnya] = useState(false);
+    const addSelengkapnya = () =>{
+        setSelengkapnya(true)
+    }
     return(
         <section id="home">
             <div className="row">
@@ -7,8 +13,17 @@ export default function Home() {
                     <div className='garis'></div>
                     <span className="home-span">Welcome</span>
                 </div>
-                <p className="home-p">What are you looking ?</p>    
-                <p className="home-p-sm">This website is for those of you who want to know about the solar system. The Solar System is a system of celestial bodies consisting of the Sun and other objects orbiting it.</p>    
+                <p className="home-p">What are you looking ?</p>
+                <div>
+                    <i onClick={addSelengkapnya} className='selengkapnya'>Lihat selengkapnya.. </i>
+                    {selengkapnya ? (<p className="home-p-sm">This website is for those of you who want to know about the solar system. The Solar System is a system of celestial bodies consisting of the Sun and other objects orbiting it.</p>) 
+                    :
+                    (
+                        <div>kosong</div>
+                    )}
+                    
+                </div>    
+                    
             </div>
             <div className="row">
                 <div class="backg">

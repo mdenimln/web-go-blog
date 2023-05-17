@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom';
+import './Blog.css';
 export default function Blog() {
     const [ articles, setArticles ] = useState([]);
     const [ load, setLoad ] = useState(true);
@@ -26,14 +27,18 @@ export default function Blog() {
             (
                 <i>Loading article..</i>
             ) : (
-                <div>
+                <div className='container'>
                     {articles.map((article) => {
                         return(
                             <article key={article.id }>
+                                <img className='image-article' src={article.imageUrl} alt={article.title} />
+                                <div className='title'>
                                 <h2>
                                     <Link to={`/blog/${article.id}`}>{article.title}</Link>
                                 </h2>
                                 <time>{new Date(article.publishedAt).toLocaleDateString()}</time>
+                                </div>
+                                
                             </article>
                         )
                     })}

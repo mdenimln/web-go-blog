@@ -27,16 +27,20 @@
   padding: 10px 30px;
   border-radius: 500px;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 600;
 }
 .nav .link-item:hover{
   transition: 0.5s;
-  transform: scale(1.4);
+  transform: scale(1.3);
 }
 .site{
   border: 2px solid;
   padding: 10px 30px;
   border-radius: 500px;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 200;
+}
+.judul{
+  font-size: 3.5em;
+  font-weight: 600;
 }

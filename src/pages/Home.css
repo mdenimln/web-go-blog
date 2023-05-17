@@ -18,7 +18,8 @@ section{
   }
   .home-span{
     color: rgba(178,63,240,1);
-    font-size: 1.5em;
+    font-size: 1.3em;
+
   }
   .home-p-sm{
     font-size: 1.5em;
@@ -26,7 +27,11 @@ section{
   }
   .home-p{
     font-size: 3.5em;
-    font-weight: bold;
+    font-weight: 600;
+  }
+  .selengkapnya {
+    font-weight: 400;
+    cursor: pointer;
   }
   #home{
     display: flex;
@@ -39,7 +44,7 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: -100px;
+    gap: 15px;
   }
   .row:nth-child(2){
     display: flex;
