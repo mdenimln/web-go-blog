@@ -17,16 +17,19 @@ export default function Home() {
                     <span className="home-span">Welcome</span>
                 </div>
                 <p className="home-p">What are you looking ?</p>
-                <div>
+                <div style={{position: 'relative'}}>
                     
                     {selengkapnya ? (
-                        <>
+                        <div style={{position: 'absolute'}}>
                         <i onClick={hideSelengkapnya} className='selengkapnya'>colsed.. </i>
                         <p className="home-p-sm">This website is for those of you who want to know about the solar system. The Solar System is a system of celestial bodies consisting of the Sun and other objects orbiting it.</p>
-                        </>
+                        </div>
                         
                     ) : (
+                        
+                        <div style={{position: 'absolute'}}>
                         <i onClick={addSelengkapnya} className='selengkapnya'>view more.. </i>
+                        </div>
                     )}
                     
                 </div>    
