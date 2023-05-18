@@ -168,7 +168,7 @@ section{
   }
   @keyframes flo{
     50%{
-      transform: translateY(30px);
+      transform: translateY(-35px);
     }
   }
   .tank{

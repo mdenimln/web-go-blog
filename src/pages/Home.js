@@ -6,6 +6,9 @@ export default function Home() {
     const addSelengkapnya = () =>{
         setSelengkapnya(true)
     }
+    const hideSelengkapnya = () => {
+        setSelengkapnya(false);
+    }
     return(
         <section id="home">
             <div className="row">
@@ -15,11 +18,15 @@ export default function Home() {
                 </div>
                 <p className="home-p">What are you looking ?</p>
                 <div>
-                    <i onClick={addSelengkapnya} className='selengkapnya'>Lihat selengkapnya.. </i>
-                    {selengkapnya ? (<p className="home-p-sm">This website is for those of you who want to know about the solar system. The Solar System is a system of celestial bodies consisting of the Sun and other objects orbiting it.</p>) 
-                    :
-                    (
-                        <div>kosong</div>
+                    
+                    {selengkapnya ? (
+                        <>
+                        <i onClick={hideSelengkapnya} className='selengkapnya'>colsed.. </i>
+                        <p className="home-p-sm">This website is for those of you who want to know about the solar system. The Solar System is a system of celestial bodies consisting of the Sun and other objects orbiting it.</p>
+                        </>
+                        
+                    ) : (
+                        <i onClick={addSelengkapnya} className='selengkapnya'>view more.. </i>
                     )}
                     
                 </div>    
