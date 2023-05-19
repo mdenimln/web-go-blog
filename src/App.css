@@ -7,11 +7,15 @@
   color: #ffffff;
 }
 .head{
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   padding: 0 70px;
   align-items: center;
   height: 100px;
+  z-index: 999;
+  backdrop-filter: blur(5px);
 }
 .head h1{
   color: #ffffff;

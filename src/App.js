@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <div className='head'>
-        <h1 className='judul'>Go Blog</h1>
+        <h1 className='judul'>MDENMLN_</h1>
         <nav className='nav'>
           
             <Link className='link-item' to='/'>Home</Link>
