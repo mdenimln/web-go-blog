@@ -1,7 +1,7 @@
 // import { FaGithub } from 'react-icons/fa';
 import profil from '../image/gambar3.png';
-import { FaAccusoft, FaUserAlt, FaLinkedin, FaTiktok, FaWatchmanMonitoring } from 'react-icons/fa'
-import fotoMain from '../image/gambar1.png';
+import { FaAccusoft, FaUserCircle, FaLinkedinIn, FaTiktok, FaWatchmanMonitoring,} from 'react-icons/fa'
+// import fotoMain from '../image/gambar1.png';
 import fotoWeb from '../image/tes.png';
 import fotoWeb2 from '../image/web.png'
 import fotomain2 from '../image/gambar7.jpg';
@@ -14,12 +14,12 @@ export default function Profile() {
         },
         container: {
             width: '70%',
-            margin: '0 0 0 30%'
+            margin: '15px 0 0 30%'
         },
         container1: {
-            width: '30%',
+            width: '27%',
             position: 'fixed',
-            padding: '0 30px 0 0',
+            padding: '0 24px 0 0',
             margin: '15px 0 0 0'
         },
         flex: {
@@ -27,8 +27,9 @@ export default function Profile() {
             position: 'relative'
         },
         imgRound: {
-            borderRadius: '20px',
+            borderRadius: '50px',
             width: '150px',
+            
         },
         h1: {
             fontSize: '2.5em',
@@ -41,13 +42,6 @@ export default function Profile() {
         p: {
             opacity: '0.7'
         },
-        button: {
-            padding: '7px 10px',
-            borderRadius: '3px',
-            border: 'none',
-            backgroundColor: 'rgba(86,6,125,1)',
-            
-        }
     }
     const main = {
         row: {
@@ -55,12 +49,13 @@ export default function Profile() {
             borderRadius: '10px',
             display: 'flex',
             gap: '50px',
-            justifyContent: 'space-between'
+            justifyContent: 'space-between',
+            padding: '1px'
         },
         imgMain: {
             height: '405px',
             width: '180px',
-            borderRadius: '30px',
+            borderRadius: '25px',
         },
         rowed: {
             display: 'flex',
@@ -68,24 +63,87 @@ export default function Profile() {
             justifyContent: 'space-between'
         },
         colOne: {
-            border: '1px solid',
             width: '400px',
             height: '180px',
             display: 'flex',
             justifyContent: 'space-between',
-            borderRadius: '30px'
+            borderRadius: '25px',
+            padding: '20px',
+            boxShadow: '0px 0px 1.3px rgb(231, 125, 200)',
+            
         },
         imgOne: {
-            height: '180px'
+            height: '100%',
+            borderRadius: '10px',
+            cursor: 'pointer'
         },
         colTwo: {
-            border: '1px solid',
+            position: 'relative',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '7px',
             width: '180px',
             height: '180px',
-            borderRadius: '30px',
+            borderRadius: '25px',
+            padding: '25px',
+            boxShadow: '0px 0px 1.5px rgb(231, 125, 200)',
+        },
+        colTwoIner: {
+            position: 'relative',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '7px',
+            width: '180px',
+            height: '180px',
+            borderRadius: '25px',
+            padding: '25px',
+            boxShadow: '0px 0px 1.5px rgb(231, 125, 200)',
+            background: '#061B65'
         },
         imgTwo: {
             height: ''
+        },
+        iner: {
+            padding: '5px',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '5px'
+        },
+        iconLinkedin: {
+            fontSize: '1.3em',
+            display: 'flex',
+            alignItems: 'center' ,
+            justifyContent: 'center',
+            width: '1.8em',
+            height: '1.8em',
+            borderRadius: '9px',
+            margin: '0 0 7px 0',
+            background: '#006699'
+        },
+        icon: {
+            fontSize: '1.3em',
+            boxShadow: '0px 0px 1.5px rgb(231, 125, 200)',
+            display: 'flex',
+            alignItems: 'center' ,
+            justifyContent: 'center',
+            width: '1.8em',
+            height: '1.8em',
+            borderRadius: '9px',
+            margin: '0 0 7px 0'
+        },
+        buttonTiktok: {
+            padding: '7px 30px',
+            background: '#EF2950',
+            border: 'none',
+            borderRadius: '3px'
+        },
+        p: {
+            fontSize: '0.95em',
+            lineHeight: '1em'
+        },
+        span: {
+            fontSize: '0.8em',
+            opacity: '0.7'
         }
     }
     return(
@@ -98,7 +156,7 @@ export default function Profile() {
                 Hallo Nama saya Muhamad Deni Maulana, saya seorang siswa smk di fajar utama dengan jurusan sija , saya tinngal di bogo
             </p>
             <div style={{display: 'flex', gap: '20px',margin: '100px 0 0 0'}}>
-                <button style={profile.button} ><Link>Send Message.</Link></button>
+                <button className='button-hoveride-profile' ><Link>Send Message.</Link></button>
                 <FaAccusoft />
             </div>
         </div>
@@ -106,32 +164,32 @@ export default function Profile() {
             <div style={main.row}>
                 <img style={main.imgMain} src={fotomain2} alt='foto main'/>
                 <div style={main.rowed}>
-                    <div style={main.colOne}>
-                        <div>
-                            <i><FaUserAlt /></i>
-                            <p>Personal Website</p>
-                            <span>mdenmlnm.github.io</span>
-                        </div>
+                    <div className='profile-colone' style={main.colOne}>
+                        <Link style={main.iner}>
+                            <i style={main.icon}><FaUserCircle /></i>
+                            <p style={main.p}>Personal Website</p>
+                            <span style={main.span}>mdenmlnm.github.io</span>
+                        </Link>
                         <img style={main.imgOne} src={fotoWeb} alt='personal web' />
                     </div>
-                    <div style={main.colTwo}>
-                        <FaLinkedin />
-                        <p>Let's Connect!!</p>
-                        <span>linkedin.com</span>
+                    <div style={main.colTwoIner}>
+                        <i style={main.iconLinkedin}><FaLinkedinIn /></i>
+                        <p style={main.p}>Let's Connect!!</p>
+                        <span style={main.span}>linkedin.com</span>
                     </div>
-                    <div style={main.colTwo}>
-                        <FaWatchmanMonitoring />
-                        <p>Work carer ducumention</p>
-                        <span>muhamad_deni.com</span>
+                    <div className='profile-colone' style={main.colTwo}>
+                        <i style={main.icon}><FaWatchmanMonitoring /></i>
+                        <p style={main.p}>Work carer ducumention</p>
+                        <span style={main.span}>muhamad_deni.com</span>
                     </div>
-                    <div style={main.colOne}>
-                        <div>
-                            <FaTiktok />
-                            <p>Tiktok</p>
-                            <span>tiktok.com</span>
-                            <button>Follow</button>
-                        </div>
-                        <img src={fotoWeb2} alt='web foto' />
+                    <div className='profile-colone' style={main.colOne}>
+                        <Link style={main.iner}>
+                            <i style={main.icon}><FaTiktok /></i>
+                            <p style={main.p}>Tiktok</p>
+                            <span style={main.span}>tiktok.com</span>
+                            <button style={main.buttonTiktok}>Follow</button>
+                        </Link>
+                        <img style={main.imgOne} src={fotoWeb2} alt='web foto' />
                     </div>
                 </div>
                 

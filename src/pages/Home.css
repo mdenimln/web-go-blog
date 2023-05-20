@@ -14,19 +14,19 @@ section{
     height: 3px;
     border-radius: 10px;
     background: rgb(86,6,125);
-    background: linear-gradient(90deg, rgba(86,6,125,1) 31%, rgba(178,63,240,1) 61%);
+    background: linear-gradient(90deg, rgb(154, 127, 200) 20%, rgb(231, 125, 200) 80%);
   }
   .home-span{
-    color: rgba(178,63,240,1);
+    color: rgb(231, 125, 200);
     font-size: 1.3em;
-
+    font-weight: 600;
   }
   .home-p-sm{
     font-size: 1.5em;
     padding-right: 140px;
   }
   .home-p{
-    font-size: 3.5em;
+    font-size: 3.9em;
     font-weight: 600;
   }
   .selengkapnya {
@@ -333,7 +333,7 @@ section{
     height:12px;
     width: 12px;
     border-radius: 50%;
-    background-color: rgba(178,63,240,1);
+    background-color: rgb(231, 125, 200);
     position: relative;
     left:5px;
     top:10px;
@@ -426,7 +426,7 @@ section{
     background-color:  transparent;
     height:80px;
     width:80px;
-    border:10px solid rgba(178,63,240,1);
+    border:10px solid rgb(231, 125, 200);
     border-radius:40px 0px 0px 70px;
     border-right: none;
     transform: rotate(180deg);
@@ -438,7 +438,7 @@ section{
     background-color:  transparent;
     height:90px;
     width:42px;
-    border:10px solid rgba(178,63,240,1);
+    border:10px solid rgb(231, 125, 200);
     border-radius:40px 0px 0px 0px;
     border-right: none;
     transform: rotate(90deg);
@@ -451,7 +451,7 @@ section{
   .pipe3{
     height:10px;
     width: 10px;
-    background-color: rgba(178,63,240,1);
+    background-color: rgb(231, 125, 200);
     position: relative;
     border-radius: 65%;
     bottom:10px;
