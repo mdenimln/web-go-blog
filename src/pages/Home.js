@@ -10,7 +10,7 @@ export default function Home() {
         setSelengkapnya(false);
     }
     return(
-        <section id="home">
+        <section id="home" style={{overflow: 'hidden'}}>
             <div className="row">
                 <div className='welcome'>
                     <div className='garis'></div>

@@ -14,17 +14,19 @@ export default function Profile() {
         },
         container: {
             width: '70%',
-            margin: '15px 0 0 30%'
+            margin: '15px 0 0 30%',
         },
         container1: {
             width: '27%',
             position: 'fixed',
-            padding: '0 24px 0 0',
-            margin: '15px 0 0 0'
+            padding: '0 20px 0 0',
+            margin: '15px 0 0 0',
         },
         flex: {
+            width: '90%',
             display: 'flex',
-            position: 'relative'
+            position: 'relative',
+            justifyContent: "space-between"
         },
         imgRound: {
             borderRadius: '50px',
@@ -45,12 +47,12 @@ export default function Profile() {
     }
     const main = {
         row: {
-            height: '450px',
+            height: '405px',
             borderRadius: '10px',
             display: 'flex',
-            gap: '50px',
+            gap: '45px',
             justifyContent: 'space-between',
-            padding: '1px'
+            padding: '1px',
         },
         imgMain: {
             height: '405px',
@@ -60,7 +62,9 @@ export default function Profile() {
         rowed: {
             display: 'flex',
             flexWrap: 'wrap',
-            justifyContent: 'space-between'
+            justifyContent: 'space-between',
+            alignItems: 'stretch',
+            gap: '45px'
         },
         colOne: {
             width: '400px',
@@ -148,6 +152,7 @@ export default function Profile() {
     }
     return(
         <section style={profile.flex}>
+        <main style={{position: 'relative'}}>
         <div style={profile.container1}> 
             <img style={profile.imgRound} src={profil} alt='profil' />
             <h1 style={profile.h1}>Deni Maulana</h1>
@@ -159,6 +164,46 @@ export default function Profile() {
                 <button className='button-hoveride-profile' ><Link>Send Message.</Link></button>
                 <FaAccusoft />
             </div>
+        </div>
+        </main>
+        
+        <main style={{display: 'flex', flexDirection: 'column', gap: '20px'}}>
+        <div style={profile.container}>
+            <div style={main.row}>
+                <img style={main.imgMain} src={fotomain2} alt='foto main'/>
+                <div style={main.rowed}>
+                    <div className='profile-colone' style={main.colOne}>
+                        <Link style={main.iner}>
+                            <i style={main.icon}><FaUserCircle /></i>
+                            <p style={main.p}>Personal Website</p>
+                            <span style={main.span}>mdenmlnm.github.io</span>
+                        </Link>
+                        <img style={main.imgOne} src={fotoWeb} alt='personal web' />
+                    </div>
+                    <div style={main.colTwoIner}>
+                        <i style={main.iconLinkedin}><FaLinkedinIn /></i>
+                        <p style={main.p}>Let's Connect!!</p>
+                        <span style={main.span}>linkedin.com</span>
+                    </div>
+                    <div className='profile-colone' style={main.colTwo}>
+                        <i style={main.icon}><FaWatchmanMonitoring /></i>
+                        <p style={main.p}>Work carer ducumention</p>
+                        <span style={main.span}>muhamad_deni.com</span>
+                    </div>
+                    <div className='profile-colone' style={main.colOne}>
+                        <Link style={main.iner}>
+                            <i style={main.icon}><FaTiktok /></i>
+                            <p style={main.p}>Tiktok</p>
+                            <span style={main.span}>tiktok.com</span>
+                            <button style={main.buttonTiktok}>Follow</button>
+                        </Link>
+                        <img style={main.imgOne} src={fotoWeb2} alt='web foto' />
+                    </div>
+                </div>
+                
+            </div>
+            
+
         </div>
         <div style={profile.container}>
             <div style={main.row}>
@@ -197,6 +242,8 @@ export default function Profile() {
             
 
         </div>
+        </main>
+        
         
         </section>
     )
