@@ -5,6 +5,13 @@ import { FaAccusoft, FaUserCircle, FaLinkedinIn, FaTiktok, FaWatchmanMonitoring,
 import fotoWeb from '../image/tes.png';
 import fotoWeb2 from '../image/web.png'
 import fotomain2 from '../image/gambar7.jpg';
+import logoig from '../image/logoig.png';
+import imgIg1 from '../image/gambar5.png';
+import imgIg2 from '../image/gambar4.png';
+import imgIg3 from '../image/ablitea.png';
+import imgIg4 from '../image/gambar9.webp';
+import imgIg5 from '../image/motioncdr.jpg';
+import imgIg6 from '../image/grafis1.png';
 import { Link } from 'react-router-dom';
 
 export default function Profile() {
@@ -13,14 +20,17 @@ export default function Profile() {
             maxWidth: '100%'
         },
         container: {
+            maxWidth: '855px',
+            minWidth: '854px',
             width: '70%',
-            margin: '15px 0 0 30%',
+            margin: '15px 0 0 0',
         },
         container1: {
-            width: '27%',
+            maxWidth: '350px',
+            // width: '23%',
+            minWidth: '10%',
             position: 'fixed',
-            padding: '0 20px 0 0',
-            margin: '15px 0 0 0',
+            top: '100px'
         },
         flex: {
             width: '90%',
@@ -152,7 +162,7 @@ export default function Profile() {
     }
     return(
         <section style={profile.flex}>
-        <main style={{position: 'relative'}}>
+        <main style={{position: 'relative',}}>
         <div style={profile.container1}> 
             <img style={profile.imgRound} src={profil} alt='profil' />
             <h1 style={profile.h1}>Deni Maulana</h1>
@@ -207,8 +217,24 @@ export default function Profile() {
         </div>
         <div style={profile.container}>
             <div style={main.row}>
-                <img style={main.imgMain} src={fotomain2} alt='foto main'/>
-                <div style={main.rowed}>
+                <div className='colBesar' style={{display: 'flex', flexDirection: 'column', boxShadow: '0px 0px 1.5px rgb(231, 125, 200)', width: '400px', height: '400px', borderRadius: '30px', padding: '25px', justifyContent: 'space-between'}}>
+                    <div style={{display: 'flex', justifyContent: 'space-between' ,alignItems: 'start'}}>
+                        <div style={{display: 'flex', flexDirection: 'column',}}>
+                            <img style={{width: '50px'}} src={logoig} alt='instagram'/>
+                            <span>@mdenmln_</span>
+                        </div>
+                        <button style={{padding: '8px 30px', backgroundColor: 'rgb(247, 34, 115)', borderRadius: '3px',fontSize: '0.9em', border: 'none' }}>Follow</button>
+                    </div>
+                    <div style={{ display: 'flex',flexWrap: 'wrap' , justifyContent: 'space-between'}}>
+                        <img style={{margin :'0 0 10px' , borderRadius: '5px'}} width='109px' src={imgIg1} alt='image6' />
+                        <img style={{margin :'0 0 10px' , borderRadius: '5px'}} width='109px' src={imgIg2} alt='image2' />
+                        <img style={{margin :'0 0 10px' , borderRadius: '5px'}} width='109px' src={imgIg3} alt='image1' />
+                        <img style={{margin :'0 0 10px' , borderRadius: '5px'}} width='109px' src={imgIg4} alt='image3' />
+                        <img style={{margin :'0 0 10px' , borderRadius: '5px'}} width='109px' src={imgIg5} alt='image4' />
+                        <img style={{margin :'0 0 10px' , borderRadius: '5px'}} width='109px' src={imgIg6} alt='image5' />
+                    </div>   
+                </div>
+                <div style={{display: 'flex', flexDirection: 'column', gap: '40px'}}>
                     <div className='profile-colone' style={main.colOne}>
                         <Link style={main.iner}>
                             <i style={main.icon}><FaUserCircle /></i>
@@ -217,30 +243,16 @@ export default function Profile() {
                         </Link>
                         <img style={main.imgOne} src={fotoWeb} alt='personal web' />
                     </div>
-                    <div style={main.colTwoIner}>
-                        <i style={main.iconLinkedin}><FaLinkedinIn /></i>
-                        <p style={main.p}>Let's Connect!!</p>
-                        <span style={main.span}>linkedin.com</span>
-                    </div>
-                    <div className='profile-colone' style={main.colTwo}>
-                        <i style={main.icon}><FaWatchmanMonitoring /></i>
-                        <p style={main.p}>Work carer ducumention</p>
-                        <span style={main.span}>muhamad_deni.com</span>
-                    </div>
                     <div className='profile-colone' style={main.colOne}>
                         <Link style={main.iner}>
-                            <i style={main.icon}><FaTiktok /></i>
-                            <p style={main.p}>Tiktok</p>
-                            <span style={main.span}>tiktok.com</span>
-                            <button style={main.buttonTiktok}>Follow</button>
+                            <i style={main.icon}><FaUserCircle /></i>
+                            <p style={main.p}>Personal Website</p>
+                            <span style={main.span}>mdenmlnm.github.io</span>
                         </Link>
-                        <img style={main.imgOne} src={fotoWeb2} alt='web foto' />
+                        <img style={main.imgOne} src={fotoWeb} alt='personal web' />
                     </div>
                 </div>
-                
             </div>
-            
-
         </div>
         </main>
         

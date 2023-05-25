@@ -30,7 +30,6 @@ export default function BlogDetail() {
         container: {
           display: "flex",
           width: '100%',
-          boxShadow: "0 0 3px 2px #cec7c759",
           flexDirection: 'column',
           alignItems: 'center',
         },
