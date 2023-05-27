@@ -13,6 +13,9 @@ import imgIg4 from '../image/gambar9.webp';
 import imgIg5 from '../image/motioncdr.jpg';
 import imgIg6 from '../image/grafis1.png';
 import { Link } from 'react-router-dom';
+import logoyt from '../image/logoyt.png';
+import fotompls from '../image/mpls.jpg';
+import kucing from '../image/kucing.jpg';
 
 export default function Profile() {
     const profile = {
@@ -20,14 +23,14 @@ export default function Profile() {
             maxWidth: '100%'
         },
         container: {
-            maxWidth: '855px',
-            minWidth: '854px',
-            width: '70%',
+            maxWidth: '854px',
+            minWidth: '853px',
+            width: '69%',
             margin: '15px 0 0 0',
         },
         container1: {
             maxWidth: '350px',
-            // width: '23%',
+            width: '28%',
             minWidth: '10%',
             position: 'fixed',
             top: '100px'
@@ -60,7 +63,7 @@ export default function Profile() {
             height: '405px',
             borderRadius: '10px',
             display: 'flex',
-            gap: '45px',
+            gap: '36px',
             justifyContent: 'space-between',
             padding: '1px',
         },
@@ -74,7 +77,7 @@ export default function Profile() {
             flexWrap: 'wrap',
             justifyContent: 'space-between',
             alignItems: 'stretch',
-            gap: '45px'
+            gap: '43px',
         },
         colOne: {
             width: '400px',
@@ -83,13 +86,14 @@ export default function Profile() {
             justifyContent: 'space-between',
             borderRadius: '25px',
             padding: '20px',
-            boxShadow: '0px 0px 1.3px rgb(231, 125, 200)',
+            boxShadow: '0px 0px 1.7px rgb(231, 125, 200)',
             
         },
         imgOne: {
             height: '100%',
-            borderRadius: '10px',
-            cursor: 'pointer'
+            borderRadius: '20px',
+            cursor: 'pointer',
+            padding: '5px'
         },
         colTwo: {
             position: 'relative',
@@ -100,7 +104,7 @@ export default function Profile() {
             height: '180px',
             borderRadius: '25px',
             padding: '25px',
-            boxShadow: '0px 0px 1.5px rgb(231, 125, 200)',
+            boxShadow: '0px 0px 1.7px rgb(231, 125, 200)',
         },
         colTwoIner: {
             position: 'relative',
@@ -168,10 +172,10 @@ export default function Profile() {
             <h1 style={profile.h1}>Deni Maulana</h1>
             <span style={profile.span}>FrontEnd Develover</span>
             <p style={profile.p}>
-                Hallo Nama saya Muhamad Deni Maulana, saya seorang siswa smk di fajar utama dengan jurusan sija , saya tinngal di bogo
+            Hello, my name is Muhamad Deni Maulana, I am a high school student at Fajar Utama majoring in SIJA, I live in Bogor
             </p>
-            <div style={{display: 'flex', gap: '20px',margin: '100px 0 0 0'}}>
-                <button className='button-hoveride-profile' ><Link>Send Message.</Link></button>
+            <div style={{display: 'flex', gap: '20px',margin: '100px 0 0 0', cursor: 'pointer'}}>
+                <button className='button-hoveride-profile' style={{cursor: 'pointer'}} ><Link>Send Message.</Link></button>
                 <FaAccusoft />
             </div>
         </div>
@@ -201,12 +205,12 @@ export default function Profile() {
                         <span style={main.span}>muhamad_deni.com</span>
                     </div>
                     <div className='profile-colone' style={main.colOne}>
-                        <Link style={main.iner}>
+                        <a rel="noreferrer"  target="_blank" href={"https://www.tiktok.com/@mdenmln_"} style={main.iner}>
                             <i style={main.icon}><FaTiktok /></i>
                             <p style={main.p}>Tiktok</p>
                             <span style={main.span}>tiktok.com</span>
                             <button style={main.buttonTiktok}>Follow</button>
-                        </Link>
+                        </a>
                         <img style={main.imgOne} src={fotoWeb2} alt='web foto' />
                     </div>
                 </div>
@@ -220,10 +224,10 @@ export default function Profile() {
                 <div className='colBesar' style={{display: 'flex', flexDirection: 'column', boxShadow: '0px 0px 1.5px rgb(231, 125, 200)', width: '400px', height: '400px', borderRadius: '30px', padding: '25px', justifyContent: 'space-between'}}>
                     <div style={{display: 'flex', justifyContent: 'space-between' ,alignItems: 'start'}}>
                         <div style={{display: 'flex', flexDirection: 'column',}}>
-                            <img style={{width: '50px'}} src={logoig} alt='instagram'/>
+                            <img style={{width: '45px',marginBottom: '10px'}} src={logoig} alt='instagram'/>
                             <span>@mdenmln_</span>
                         </div>
-                        <button style={{padding: '8px 30px', backgroundColor: 'rgb(247, 34, 115)', borderRadius: '3px',fontSize: '0.9em', border: 'none' }}>Follow</button>
+                        <a rel="noreferrer" target={"_blank"} href={"https://www.instagram.com/mdenmln_/"} style={{padding: '6px 30px', backgroundColor: 'rgb(247, 34, 115)', borderRadius: '4px',fontSize: '0.9em', }}>Follow</a>
                     </div>
                     <div style={{ display: 'flex',flexWrap: 'wrap' , justifyContent: 'space-between'}}>
                         <img style={{margin :'0 0 10px' , borderRadius: '5px'}} width='109px' src={imgIg1} alt='image6' />
@@ -236,20 +240,20 @@ export default function Profile() {
                 </div>
                 <div style={{display: 'flex', flexDirection: 'column', gap: '40px'}}>
                     <div className='profile-colone' style={main.colOne}>
-                        <Link style={main.iner}>
-                            <i style={main.icon}><FaUserCircle /></i>
-                            <p style={main.p}>Personal Website</p>
-                            <span style={main.span}>mdenmlnm.github.io</span>
-                        </Link>
-                        <img style={main.imgOne} src={fotoWeb} alt='personal web' />
+                        <a  rel="noreferrer" target={"_blank"}  href={"https://youtu.be/RHuPYl7N-Cg"} style={main.iner}>
+                            <img style={{width: '45px',marginBottom: '10px'}} src={logoyt} alt='youtube' />
+                            <p style={main.p}>SMK Fajar Utama</p>
+                            <span style={main.span}>youtube.com</span>
+                        </a>
+                        <img style={main.imgOne} src={fotompls} alt='personal web' />
                     </div>
                     <div className='profile-colone' style={main.colOne}>
-                        <Link style={main.iner}>
-                            <i style={main.icon}><FaUserCircle /></i>
-                            <p style={main.p}>Personal Website</p>
+                        <a rel="noreferrer" target={"_blank"}  href={"https://kucingpedia.com/"} style={main.iner}>
+                            <img style={{width: '45px',marginBottom: '10px'}} src={kucing} alt='kucing' />
+                            <p style={main.p}>Hewan yang suka bermain</p>
                             <span style={main.span}>mdenmlnm.github.io</span>
-                        </Link>
-                        <img style={main.imgOne} src={fotoWeb} alt='personal web' />
+                        </a>
+                        <img style={main.imgOne} src={kucing} alt='kucing' />
                     </div>
                 </div>
             </div>
