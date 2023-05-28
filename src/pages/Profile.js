@@ -55,7 +55,8 @@ export default function Profile() {
             opacity: '0.9'
         },
         p: {
-            opacity: '0.7'
+            opacity: '0.7',
+            fontWeight: '300',
         },
     }
     const main = {
