@@ -6,12 +6,31 @@ import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import BlogDetail from './pages/BlogDetail';
 import ButtonSite from './components/ButtonSite';
-                  
+import {useState, useEffect} from 'react'
+import NavMobile from './components/NavMobile';
 
 function App() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const isMobile = 600;
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [windowWidth]);
+  console.log(windowWidth)
+
   return (
     <div className="App">
-      <div className='head'>
+      {windowWidth <= isMobile ? (
+        < NavMobile/>
+      ):(
+        <div className='head'>
         
         <h1 className='judul'>Go Blog</h1>
         <nav className='nav'>
@@ -29,6 +48,8 @@ function App() {
           
         </nav>
       </div>
+      )}
+      
      <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/profile' element={<Profile />} />

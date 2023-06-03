@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import { FaEye, FaEyeSlash } from 'react-icons/fa'
 import './Home.css';
 export default function Home() {
     const [selengkapnya, setSelengkapnya] = useState(false);
@@ -21,14 +22,20 @@ export default function Home() {
                     
                     {selengkapnya ? (
                         <div style={{position: 'absolute'}}>
-                        <i onClick={hideSelengkapnya} className='selengkapnya'>colsed.. </i>
-                        <p className="home-p-sm">This website is for those of you who want to know about the solar system. The Solar System is a system of celestial bodies consisting of the Sun and other objects orbiting it.</p>
+                            <div onClick={hideSelengkapnya} className='selengkapnya'>
+                                <span>less</span>
+                                <FaEye  />
+                            </div>
+                            <p className="home-p-sm">This website is for those of you who want to know about the solar system. The Solar System is a system of celestial bodies consisting of the Sun and other objects orbiting it.</p>
                         </div>
                         
                     ) : (
                         
                         <div style={{position: 'absolute'}}>
-                        <i onClick={addSelengkapnya} className='selengkapnya'>view more.. </i>
+                            <div onClick={addSelengkapnya} className='selengkapnya'>
+                                <span>more</span>
+                                < FaEyeSlash  />
+                            </div>
                         </div>
                     )}
                     
@@ -36,76 +43,76 @@ export default function Home() {
                     
             </div>
             <div className="row">
-                <div class="backg">
-                    <div class="planet">
-                        <div class="r1"></div>
-                        <div class="r2"></div>
-                        <div class="r3"></div>
-                        <div class="r4"></div>
-                        <div class="r5"></div>
-                        <div class="r6"></div>
-                        <div class="r7"></div>
-                        <div class="r8"></div>
-                        <div class="shad"></div>
+                <div className="backg">
+                    <div className="planet">
+                        <div className="r1"></div>
+                        <div className="r2"></div>
+                        <div className="r3"></div>
+                        <div className="r4"></div>
+                        <div className="r5"></div>
+                        <div className="r6"></div>
+                        <div className="r7"></div>
+                        <div className="r8"></div>
+                        <div className="shad"></div>
                     </div>
-                    <div class="stars">
-                        <div class="s1"></div>
-                        <div class="s2"></div>
-                        <div class="s3"></div>
-                        <div class="s4"></div>
-                        <div class="s5"></div>
-                        <div class="s6"></div>
-                        <div class="s7"></div>
-                        <div class="s8"></div>
-                        <div class="s9"></div>
-                        <div class="s10"></div>
+                    <div className="stars">
+                        <div className="s1"></div>
+                        <div className="s2"></div>
+                        <div className="s3"></div>
+                        <div className="s4"></div>
+                        <div className="s5"></div>
+                        <div className="s6"></div>
+                        <div className="s7"></div>
+                        <div className="s8"></div>
+                        <div className="s9"></div>
+                        <div className="s10"></div>
                     </div>
-                    <div class="an">
-                        <div class="tank"></div>
-                        <div class="astro">
+                    <div className="an">
+                        <div className="tank"></div>
+                        <div className="astro">
                             
-                            <div class="helmet">
-                                <div class="glass">
-                                <div class="shine"></div>
+                            <div className="helmet">
+                                <div className="glass">
+                                <div className="shine"></div>
                                 </div>
                             </div>
-                            <div class="dress">
-                                <div class="c">
-                                <div class="btn1"></div>
-                                <div class="btn2"></div>
-                                <div class="btn3"></div>
-                                <div class="btn4"></div>
+                            <div className="dress">
+                                <div className="c">
+                                <div className="btn1"></div>
+                                <div className="btn2"></div>
+                                <div className="btn3"></div>
+                                <div className="btn4"></div>
                                 </div>
                             </div>
-                            <div class="handl">
-                                <div class="handl1">
-                                <div class="glovel">
-                                    <div class="thumbl"></div>
-                                    <div class="b2"></div>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="handr">
-                                <div class="handr1">
-                                <div class="glover">
-                                    <div class="thumbr"></div>
-                                    <div class="b1"></div>
+                            <div className="handl">
+                                <div className="handl1">
+                                <div className="glovel">
+                                    <div className="thumbl"></div>
+                                    <div className="b2"></div>
                                 </div>
                                 </div>
                             </div>
-                            <div class="legl">
-                                <div class="bootl1">
-                                <div class="bootl2"></div>
+                            <div className="handr">
+                                <div className="handr1">
+                                <div className="glover">
+                                    <div className="thumbr"></div>
+                                    <div className="b1"></div>
+                                </div>
                                 </div>
                             </div>
-                            <div class="legr">
-                                <div class="bootr1">
-                                <div class="bootr2"></div>
+                            <div className="legl">
+                                <div className="bootl1">
+                                <div className="bootl2"></div>
                                 </div>
                             </div>
-                            <div class="pipe">
-                                <div class="pipe2">
-                                <div class="pipe3"></div>
+                            <div className="legr">
+                                <div className="bootr1">
+                                <div className="bootr2"></div>
+                                </div>
+                            </div>
+                            <div className="pipe">
+                                <div className="pipe2">
+                                <div className="pipe3"></div>
                                 </div>
                             </div>
                         </div>

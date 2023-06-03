@@ -4,6 +4,9 @@ section{
     margin: 0 auto;
     position: relative;
   }
+  #home{
+    border: 1px solid;
+  }
   .welcome{
     display: flex;
     align-items: center;
@@ -28,10 +31,24 @@ section{
   .home-p{
     font-size: 3.9em;
     font-weight: 600;
+    color: #ffffff;
   }
   .selengkapnya {
     font-weight: 400;
     cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    margin: 0 0 20px 0;
+    background: linear-gradient(90deg, rgb(154, 127, 200) 20%, rgb(231, 125, 200) 80%);
+    color: #ffffff;
+  }
+  .selengkapnya span{
+    font-size: 0.8em;
+    color: #ffffff;
   }
   #home{
     display: flex;
@@ -50,18 +67,31 @@ section{
   .row:nth-child(2){
     display: flex;
     align-items: center;
-    width: 40%;
+    width: 400px;
+    position: relative;
   }
+
+/* Rsponsive mobile */
+@media only screen and (max-width: 600px){
+  #home{
+    display: block;
+  }
+  .row:nth-child(1){
+    width: 100%;
+  }
+  .home-p{
+    font-size: 1em;
+  }
+}
+
   .backg{
     position:relative;
     height:300px;
     width:200px;
     transform:scale(0.7);
     overflow-x: visible;
-    margin-top: -150px;
     }
   .planet{
-
     height:200px;
     width:200px;
     border-radius: 50%;
@@ -155,9 +185,8 @@ section{
   .astro{
     position: relative;
     left:131px;
-    bottom: 250px;
+    bottom: 350px;
     transform: rotate(-30deg);
-
   }
   .an{
     animation-name: flo;
@@ -179,7 +208,7 @@ section{
     border-radius: 10px;
     position: relative;
     left:95px;
-    top:30px;
+    top: -70px;
     transform: rotate(-30deg);
   }
   .helmet{
@@ -365,7 +394,6 @@ section{
     left:19px;
     top:4px;
   }
-  
   .legl{
     height:100px;
     width:40px;
@@ -465,43 +493,43 @@ section{
     position: relative;
   }
   .s1{
-    bottom:150px;
+    bottom:200px;
     left:200px;
   }
   .s2{
-    top:130px;
+    top:80px;
     left:254px;
   }
   .s3{
-    bottom:8px;
+    bottom:58px;
     left:65px;
   }
   .s4{
-    top: 216px;
+    top: 165px;
     left:249px;
   }
   .s5{
-    top: 139px;
+    top: 89px;
     left:100px;
   }
   .s6{
-    top:100px;
+    top:50px;
     left:420px;
   }
   .s7{
-    top:130px;
+    top:80px;
     left:30px;
   }
   .s8{
-    bottom: -20px;
+    bottom: 30px;
     left:-80px;
   }
   .s9{
-    top:-10px;
+    top:-60px;
     left:370px;
   }
   .s10{
-    bottom:180px;
+    bottom:230px;
     left:-20px;
   }
   

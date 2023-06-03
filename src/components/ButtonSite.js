@@ -4,7 +4,7 @@ const ButtonSite = () => {
     return(
         <>
             <Link className='button-site' to='/contact'>
-                <div class="li">
+                <div className="li">
                     Notify Me
                     <span></span><span></span><span></span><span></span>
                 </div>
