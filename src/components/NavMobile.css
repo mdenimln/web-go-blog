@@ -14,7 +14,7 @@
   display: none;
 }
 .nav-menu{
-  display: none;
+  display: flex;
   position: absolute;
   background: #07051c;
   top: 0;

@@ -34,7 +34,7 @@ export default function Blog() {
                                 <img className='image-article' src={article.imageUrl} alt={article.title} />
                                 <div className='title'>
                                 <h2>
-                                    <Link to={`/blog/${article.id}`}>{article.title}</Link>
+                                    <Link style={{color: 'white'}} to={`/blog/${article.id}`}>{article.title}</Link>
                                 </h2>
                                 <time>{new Date(article.publishedAt).toLocaleDateString()}</time>
                                 </div>

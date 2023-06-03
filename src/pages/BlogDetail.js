@@ -34,7 +34,8 @@ export default function BlogDetail() {
           alignItems: 'center',
         },
         title: {
-            textAlign: 'center'
+            textAlign: 'center',
+            color: 'white'
         },
         image: {
             width: '80%',
@@ -42,7 +43,8 @@ export default function BlogDetail() {
         },
         source: {
             textAlign: 'start',
-            width: '80%'
+            width: '80%',
+            color: 'white'
         }
 
     }
@@ -59,10 +61,10 @@ export default function BlogDetail() {
                     <img style={cardStyles.image} src={article.imageUrl} alt={article.title}/>
                     <div>
                         <h1 style={cardStyles.title}>{article.title}</h1>
-                        <p>{article.summary}</p>
+                        <p style={{color: 'white'}}>{article.summary}</p>
                         <br></br>
-                        <time>{new Date(article.publishedAt).toLocaleDateString()}</time>
-                        <p>Source: <a href={article.url} target="_blank" rel="noreferrer">  {article.newsSite}</a></p>
+                        <time style={{color: 'white'}}>{new Date(article.publishedAt).toLocaleDateString()}</time>
+                        <p style={{color: 'white'}}>Source: <a style={{color: 'white'}}href={article.url} target="_blank" rel="noreferrer">  {article.newsSite}</a></p>
                     </div>
                     
                     <p style={cardStyles.source}>

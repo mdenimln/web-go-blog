@@ -4,9 +4,7 @@ section{
     margin: 0 auto;
     position: relative;
   }
-  #home{
-    border: 1px solid;
-  }
+
   .welcome{
     display: flex;
     align-items: center;
@@ -27,6 +25,7 @@ section{
   .home-p-sm{
     font-size: 1.36em;
     padding-right: 140px;
+    color: #ffffff;
   }
   .home-p{
     font-size: 3.9em;

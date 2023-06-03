@@ -21,6 +21,7 @@ article{
 article .title h2{
     font-size: 1.3em;
     font-weight: 400;
+    color: white;
 }
 article .title time {
     font-style: italic;

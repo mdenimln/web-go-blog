@@ -48,15 +48,18 @@ export default function Profile() {
         },
         h1: {
             fontSize: '2.5em',
-            fontWeight: '600'
+            fontWeight: '600',
+            color: 'white'
         },
         span: {
             fontSize: '1.2em',
-            opacity: '0.9'
+            opacity: '0.9',
+            color: 'white'
         },
         p: {
             opacity: '0.7',
             fontWeight: '300',
+            color: 'white'
         },
     }
     const main = {
@@ -154,15 +157,18 @@ export default function Profile() {
             padding: '7px 30px',
             background: '#EF2950',
             border: 'none',
-            borderRadius: '3px'
+            borderRadius: '3px',
+            color: 'white'
         },
         p: {
             fontSize: '0.95em',
-            lineHeight: '1em'
+            lineHeight: '1em',
+            color: 'white'
         },
         span: {
             fontSize: '0.8em',
-            opacity: '0.7'
+            opacity: '0.7',
+            color: 'white'
         }
     }
     return(
@@ -176,8 +182,8 @@ export default function Profile() {
             Hello, my name is Muhamad Deni Maulana, I am a high school student at Fajar Utama majoring in SIJA, I live in Bogor
             </p>
             <div style={{display: 'flex', gap: '20px',margin: '100px 0 0 0', cursor: 'pointer'}}>
-                <button className='button-hoveride-profile' style={{cursor: 'pointer'}} ><Link>Send Message.</Link></button>
-                <FaAccusoft />
+                <button className='button-hoveride-profile' style={{cursor: 'pointer'}} ><Link style={{color:'white'}}>Send Message.</Link></button>
+                <FaAccusoft style={{color : 'white'}} />
             </div>
         </div>
         </main>
@@ -189,25 +195,25 @@ export default function Profile() {
                 <div style={main.rowed}>
                     <div className='profile-colone' style={main.colOne}>
                         <Link style={main.iner}>
-                            <i style={main.icon}><FaUserCircle /></i>
+                            <i style={main.icon}><FaUserCircle style={{color: 'white'}}/></i>
                             <p style={main.p}>Personal Website</p>
                             <span style={main.span}>mdenmlnm.github.io</span>
                         </Link>
                         <img style={main.imgOne} src={fotoWeb} alt='personal web' />
                     </div>
                     <div style={main.colTwoIner}>
-                        <i style={main.iconLinkedin}><FaLinkedinIn /></i>
+                        <i style={main.iconLinkedin}><FaLinkedinIn style={{color: 'white'}}/></i>
                         <p style={main.p}>Let's Connect!!</p>
                         <span style={main.span}>linkedin.com</span>
                     </div>
                     <div className='profile-colone' style={main.colTwo}>
-                        <i style={main.icon}><FaWatchmanMonitoring /></i>
+                        <i style={main.icon}><FaWatchmanMonitoring style={{color: 'white'}}/></i>
                         <p style={main.p}>Work carer ducumention</p>
                         <span style={main.span}>muhamad_deni.com</span>
                     </div>
                     <div className='profile-colone' style={main.colOne}>
                         <a rel="noreferrer"  target="_blank" href={"https://www.tiktok.com/@mdenmln_"} style={main.iner}>
-                            <i style={main.icon}><FaTiktok /></i>
+                            <i style={main.icon}><FaTiktok style={{color: 'white'}}/></i>
                             <p style={main.p}>Tiktok</p>
                             <span style={main.span}>tiktok.com</span>
                             <button style={main.buttonTiktok}>Follow</button>
@@ -226,9 +232,9 @@ export default function Profile() {
                     <div style={{display: 'flex', justifyContent: 'space-between' ,alignItems: 'start'}}>
                         <div style={{display: 'flex', flexDirection: 'column',}}>
                             <img style={{width: '45px',marginBottom: '10px'}} src={logoig} alt='instagram'/>
-                            <span>@mdenmln_</span>
+                            <span style={{color: 'white'}}>@mdenmln_</span>
                         </div>
-                        <a rel="noreferrer" target={"_blank"} href={"https://www.instagram.com/mdenmln_/"} style={{padding: '6px 30px', backgroundColor: 'rgb(247, 34, 115)', borderRadius: '4px',fontSize: '0.9em', }}>Follow</a>
+                        <a rel="noreferrer" target={"_blank"} href={"https://www.instagram.com/mdenmln_/"} style={{padding: '6px 30px', backgroundColor: 'rgb(247, 34, 115)', borderRadius: '4px',fontSize: '0.9em',color: 'white' }}>Follow</a>
                     </div>
                     <div style={{ display: 'flex',flexWrap: 'wrap' , justifyContent: 'space-between'}}>
                         <img style={{margin :'0 0 10px' , borderRadius: '5px'}} width='109px' src={imgIg1} alt='image6' />
