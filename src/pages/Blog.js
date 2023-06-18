@@ -25,7 +25,7 @@ export default function Blog() {
             <p>Ini adalah tulisan tulisan saya (tapi boong)</p>
             {load ? 
             (
-                <i>Loading article..</i>
+                <i>Loading articale..</i>
             ) : (
                 <div className='container'>
                     {articles.map((article) => {
